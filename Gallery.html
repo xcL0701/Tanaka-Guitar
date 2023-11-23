@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tanaka Guitar</title>
+        <link rel="stylesheet" href="Gallery.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header">
+            <div class="image">
+                <nav>
+                    <a href="Home.html"><img src="Asset/Logo.png"></a>
+                    <div class="nav-links" id="navLinks">
+                        <img src="Asset/close.png" onclick="hideMenu()">
+                            <ul>
+                                <li><a href="Home.html">Home</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="Member.html">Member</a></li>
+                                <li><a href="Contact.html">Contact Us</a></li>
+                            </ul>
+                    </div>
+                    <div class="menu">
+                        <img src="Asset/menu.png" onclick="showMenu()">
+                    </div>
+                </nav>
+            </div>
+            <div class="banner-text">
+                Gallery
+            </div>
+            <script>
+                var navLinks = document.getElementById("navLinks");
+                function showMenu(){
+                    navLinks.style.right = "0px";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+            </script>
+        </section>
+        <section class="gallery">
+            <h1>List of guitars that are currently being sold at the store</h1>
+            <div class="acoustic">
+                <h2>Acoustic Guitars</h2>
+                <div class="acoustic-container">
+                    <div class="display">
+                        <img src="Asset/Acoustic Guitar 1.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>Yamaha F310<br>US$ 89.00</h2>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <img src="Asset/Acoustic Guitar 2.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>Epiphone<br>Starling<br>US$ 199.00</h2>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <img src="Asset/Acoustic Guitar 3.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>Fender<br>FA-125<br>US$ 244.00</h2>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <img src="Asset/Acoustic Guitar 4.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>CEC7<br>US$ 319.00</h2>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br><br>
+                <h2>Electric Guitars</h2>
+                <div class="electric-container">
+                    <div class="display">
+                        <img src="Asset/Electric Guitar 1.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>Cort G100<br>US$ 149.00</h2>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <img src="Asset/Electric Guitar 2.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>Ibanez Gio<br>GRX40-MGN<br>US$ 149.00</h2>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <img src="Asset/Electric Guitar 3.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>Epiphone Les Paul<br>Standard 50s<br>US$ 469.00</h2>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <img src="Asset/Electric Guitar 4.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>Player Stratocaster<br>PF 3TS<br>US$ 599.00</h2>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br><br>
+                <h2>Bass Guitars</h2>
+                <div class="bass-container">
+                    <div class="display">
+                        <img src="Asset/Bass Guitar 1.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>Cort<br>Action Bass Plus<br>US$ 174.00</h2>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <img src="Asset/Bass Guitar 2.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>Yamaha TRBX505<br>US$ 549.00</h2>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <img src="Asset/Bass Guitar 3.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>Fender AM PRO II<br>P-Bass MN 3TSB<br>US$ 1589.00</h2>
+                        </div>
+                    </div>
+                    <div class="display">
+                        <img src="Asset/Bass Guitar 4.png" style="margin-left: auto;">
+                        <div class="imagetitle">
+                            <h2>Gibson SG<br>Standard Bass<br>US$ 1649.00</h2>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br><br>
+            </div>
+        </section>
+
+        <section class="footer">
+            <p>© 2022 Tanaka Guitar | Tanaka Guitar is a trademark of PT Tanaka Company</p>
+        </section>
+    </body>
+</html>

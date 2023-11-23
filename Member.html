@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tanaka Guitar</title>
+        <link rel="stylesheet" href="Member.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header">
+            <div class="image">
+                <nav>
+                    <a href="Home.html"><img src="Asset/Logo.png"></a>
+                    <div class="nav-links" id="navLinks">
+                        <img src="Asset/close.png" onclick="hideMenu()">
+                            <ul>
+                                <li><a href="Home.html">Home</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="Member.html">Member</a></li>
+                                <li><a href="Contact.html">Contact Us</a></li>
+                            </ul>
+                    </div>
+                    <div class="menu">
+                        <img src="Asset/menu.png" onclick="showMenu()">
+                    </div>
+                </nav>
+            </div>
+            <div class="banner-text">
+                Member
+            </div>
+            <script>
+                var navLinks = document.getElementById("navLinks");
+                function showMenu(){
+                    navLinks.style.right = "0px";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+            </script>
+        </section>
+
+        <section class="membership">
+            <div class="text-member">
+                <h1>Join Our Membership</h1>
+                <p>By joining our membership, you will get the following benefits<br><br><br></p>
+                <p>
+                    1. The latest update about guitar in our store<br><br>
+                    2. Latest discount notifications<br><br>
+                    3. Prize draw is only for membership<br><br>
+                    4. Special discount for membership
+                </p>
+            </div>
+            <div id="form">
+                <form name="form" onsubmit="event.preventDefault(); validateForm()">
+                    <h1>Registration Form</h1>
+    
+                    <label for="name">Name : </label>
+                    <input type="text" id="name" placeholder="Enter your name...">
+                    <small class="error"></small>
+                    <br><br><br>
+                    
+                    <label for="email">E-Mail : </label>
+                    <input type="text" id="email" placeholder="Enter your e-mail...">
+                    <small class="error"></small>
+                    <br><br><br>
+
+                    <label for="phone">Phone Number : </label>
+                    <input type="text" id="phone" placeholder="Enter your phone number...">
+                    <small class="error"></small>
+                    <br><br><br>
+
+                    <label for="gender">Gender</label>
+                    <label for="male" class="radio">
+                        <input type="radio" name="gender" id="male" class="male">
+                        <div class="male-but"></div>
+                        &nbsp;&nbsp;Male
+                    </label>
+                    <label for="female" class="radio">
+                        <input type="radio" name="gender" id="female" class="female">
+                        <div class="female-but"></div>
+                        &nbsp;Female
+                    </label><br>
+                    <small class="error"></small>
+                    <br><br>
+
+                    <label for="address">Address : </label>
+                    <textarea id="address" placeholder="Enter your address..." rows="3"></textarea>
+                    <small class="error"></small>
+                    <br><br><br>
+
+                    <label class="agreement"for="tnc">
+                        <input type="checkbox" name="tnc" id="tnccheck" class="tnccheckbox">
+                        <div class="tnccheckbut"></div>
+                        &nbsp;&nbsp;Send daily notification letters to my email
+                    </label>
+                    <small class="error"></small>
+                    <br><br>
+    
+                    <input type="submit" value="Register">
+                    <p id="success"></p>
+                </form>
+            </div>
+            <script src="form.js"></script>
+        </section>
+
+        <section class="footer">
+            <p>© 2022 Tanaka Guitar | Tanaka Guitar is a trademark of PT Tanaka Company</p>
+        </section>
+    </body>
+</html>

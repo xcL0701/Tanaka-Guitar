@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tanaka Guitar</title>
+        <link rel="stylesheet" href="About.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header">
+            <div class="image">
+                <nav>
+                    <a href="Home.html"><img src="Asset/Logo.png"></a>
+                    <div class="nav-links" id="navLinks">
+                        <img src="Asset/close.png" onclick="hideMenu()">
+                        <ul>
+                            <li><a href="Home.html">Home</a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>
+                            <li><a href="About.html">About Us</a></li>
+                            <li><a href="Member.html">Member</a></li>
+                            <li><a href="Contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <img src="Asset/menu.png" onclick="showMenu()">
+                    </div>
+                </nav>
+            </div>
+            <div class="banner-textab">
+                About Us
+            </div>
+            <script>
+                var navLinks = document.getElementById("navLinks");
+                function showMenu(){
+                    navLinks.style.right = "0px";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+            </script>
+        </section>
+
+        <section class="about-us">
+            <h1>History About Tanaka Guitar</h1>
+            <div class="about">
+                <div class="about-text">
+                    <p>I used to be (the shop owner) just a music fan, my idol was Ed Sheeran who I think is the greatest guitar player and I admire the most. Until finally he had his own guitar and started to learn the guitar self-taught until he played it fluently.<br><br><br>And I saw an Indonesian singer named Sheryl Sheinafia who has a good guitar unlike usual, so I finally got interested in making my own guitar.<br><br><br>And coincidentally I have the capital to open a shop, I finally made this shop I named Tanaka Guitar. And finally I created a team that is currently the Founder and Co-Founder of this store.</p>
+                </div>
+                <div class="about-text">
+                    <img src="Asset/About Us banner.png">
+                    <img src="Asset/About us 1.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <p>© 2022 Tanaka Guitar | Tanaka Guitar is a trademark of PT Tanaka Company</p>
+        </section>
+    </body>
+</html>
